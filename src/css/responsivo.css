@@ -1,0 +1,80 @@
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 1024px */
+@media (max-width: 1024px){
+
+    /* Alterando as propriedades da tag header para deixar o site responsivo */
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+
+    .cabecalho .menu li a {
+        padding: 15px;
+    }
+
+    /* Alterando as propriedades da tag main para deixar o site responsivo */
+    .home .informacoes {
+        padding: 30px;
+    }
+
+    .home .informacoes img {
+        max-width: 100px;
+    }
+
+    .home .informacoes .titulo {
+        font-size: 40px;
+    }
+
+    /* Alterando as propriedades da tag section para deixar o site responsivo */
+    .compre-ja .cartao {
+        width: 70%;
+    }
+
+}
+
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 768px */
+@media (max-width: 768px){
+    
+    /* Alterando as propriedades da tag section para deixar o site responsivo */
+    .compre-ja {
+        padding: 30px;
+    }
+
+    .compre-ja .cartao {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .compre-ja .informacoes h3 {
+        font-size: 35px;
+    }
+
+    .compre-ja .informacoes .plataformas {
+        flex-direction: column;
+    }
+
+    /* Alterando as propriedades da tag button para deixar o site responsivo tanto na tag main quanto na tag section */
+    .btn-plataforma {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .btn-comprar {
+        width: 100%;
+    }
+}
+
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 425px */
+@media (max-width: 425px){
+    
+    /* Alterando o gradiente para ter uma melhor leitura do conteúdo escrito */
+    main::after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+    }
+
+    /* Alterando o tamanho da tag img que possue a capa do jogo */
+    .compre-ja .cartao .capa-do-jogo {
+        max-width: 80%;
+    }
+}
